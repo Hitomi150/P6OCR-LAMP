@@ -41,11 +41,6 @@ print("Déplacement des fichiers Wordpress dans le répertoire de apache")
 
 os.system("mv wordpress/* /var/www/html")
 
-# Configuration de WordPress
-print("Configuration de Wordpress")
-
-subprocess.call("/var/www/html/wp-admin/setup-config.php")
-
 # Redémarrage d'Apache
 print("Redémarrage d'Apache")
 
