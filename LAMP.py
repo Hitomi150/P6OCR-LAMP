@@ -3,6 +3,7 @@
 import os
 import subprocess
 
+
 print("Installation du serveur LAMP + Wordpress...")
 
 # Mise a jour des paquets

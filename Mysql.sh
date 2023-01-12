@@ -1,13 +1,24 @@
 #!/bin/bash
 
+echo "Entrer nom database:"
+read dbname
+
 # Create the database
-mysql -e CREATE DATABASE test;
+
+mysql -e "CREATE DATABASE ${dbname};"
+
 
 # Create user
-mysql -e CREATE USER 'test'@'localhost' IDENTIFIED BY '1234';
+echo "Enter username:"
+read username
+echo "Enter password:"
+read userpass
+mysql -e "CREATE USER ${username}@'localhost' IDENTIFIED BY '${userpass}';"
 
 # Donnée Privileges
-mysql -e GRANT ALL PRIVILEGES ON test.* TO 'test'@'localhost';
+mysql -e "GRANT ALL PRIVILEGES ON ${dbname}.* TO ${username}@'localhost';"
 
-mysql -e FLUSH ALL PRIVILEGES;
+mysql -e "FLUSH PRIVILEGES;"
+echo "C'est FINI...."
 
+exit
