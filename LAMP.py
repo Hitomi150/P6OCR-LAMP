@@ -19,7 +19,7 @@ os.system("apt-get install apache2 -y")
 # Installation de MySQL
 print("Installation de MySQL")
 
-os.system("apt-get install mysql-server -y")
+os.system("apt-get install mariadb-server -y")
 
 # Installation de PHP
 print("Installation de PHP")
@@ -29,7 +29,7 @@ os.system("apt-get install php libapache2-mod-php php-mysql -y")
 print("Installation de Wordpress")
 # Telechargement de WordPress
 print("Telechargement de Wordpress")
-
+os.system("cd /tmp/")
 os.system("wget https://fr.wordpress.org/latest-fr_FR.zip")
 
 # Extraction de WordPress
@@ -52,30 +52,5 @@ print("... Fin de l'installation du serveur LAMP + Wordpress")
 
 print("Creation de la Database...")
 
-# Etablissez une connexion à MySQL
-print("Connexion a MySQL")
-cnx = mysql.connector.connect(user='root', password='1234', host='localhost')
+os.system("sudo ./Mysql.sh")
 
-# Creez un curseur pour exécuter des requêtes SQL
-cursor = cnx.cursor()
-
-# Creez une base de données nommée "ma_base_de_donnees"
-print("Creation de la database")
-cursor.execute("CREATE DATABASE test")
-
-# Créez un utilisateur nommé "mon_utilisateur" avec le mot de passe "mon_mot_de_passe"
-print("Creation de l'utilisateur")
-cursor.execute("CREATE USER 'test'@'localhost' IDENTIFIED BY '1234'")
-
-# Accordez tous les privilèges à l'utilisateur sur la base de données "ma_base_de_donnees"
-print("Accord des privilèges à l'utilisateur")
-cursor.execute("GRANT ALL PRIVILEGES ON test.* TO 'test'@'localhost'")
-
-# Enregistrez les modifications
-print("Enregistrez les modifications")
-cnx.commit()
-
-# Fermez la connexion
-cnx.close()
-
-print("Fin de la création de la database")
