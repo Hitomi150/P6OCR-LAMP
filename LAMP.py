@@ -2,7 +2,6 @@
 
 import os
 import subprocess
-import mysql.connector
 
 print("Installation du serveur LAMP + Wordpress...")
 
