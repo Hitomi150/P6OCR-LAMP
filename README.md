@@ -18,7 +18,7 @@ Ce qu'il est requis pour commencer avec votre projet...
 
 Pour installer le script il faut:
 
--Télécharger les fichier LAMP.py et Mysql.sh
+- Télécharger les fichier LAMP.py et Mysql.sh
 
 ### Executer le script
 
@@ -26,23 +26,23 @@ Executer la commande "python LAMP.py" et le script va s'éxectuer dans son ensem
 
 Le script va:
 
--Mettre à jour l'os (testé sous debian 10)
+- Mettre à jour l'os (testé sous debian 10)
 
--Installer Apache
+- Installer Apache
 
--Installer MySQL
+- Installer MySQL
 
--Installer PHP
+- Installer PHP
 
--Télécharger wordpress
+- Télécharger wordpress
 
--Proceder a l'extraction du l'archive wordpress dans ça derniere version en français (latest-fr-FR.zip)
+- Proceder a l'extraction du l'archive wordpress dans ça derniere version en français (latest-fr-FR.zip)
 
--Déplacer les fichier de wordpress dans le repertoire web de Apache (/war/www/html)
+- Déplacer les fichier de wordpress dans le repertoire web de Apache (/war/www/html)
 
--Redémarrer le service Apache
+- Redémarrer le service Apache
 
--Faire appel au script Mysql.sh pour créer une database et un utilisateur
+- Faire appel au script Mysql.sh pour créer une database et un utilisateur
 
 
 ## Fabriqué avec
