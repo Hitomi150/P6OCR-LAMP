@@ -5,24 +5,24 @@
 
 ## But de projet
 
-Ce projet consiste à automatiser l'installation d'un serveur LAMP+wordpress et la création d'une base de donnée.
+Ce projet consiste à automatiser l'installation d'un serveur LAMP+wordpress et la création d'une base de données.
 
 ### Pré-requis
 
 Ce qu'il est requis pour commencer avec votre projet...
 
 - Installé python
-- Donnée les droits d'execution au fichier Mysql.sh avec la commande "chmod -R 777 /etc/cron.d/Mysql.sh"
+- Donnée les droits d'exécution au fichier Mysql.sh avec la commande "chmod -R 777 /etc/cron.d/Mysql.sh"
 
 ### Installation
 
 Pour installer le script il faut:
 
-- Télécharger les fichier LAMP.py et Mysql.sh
+- Télécharger les fichiers LAMP.py et Mysql.sh
 
-### Executer le script
+### Exécuter le script
 
-Executer la commande "python LAMP.py" et le script va s'éxectuer dans son ensemble.
+Exécuter la commande "python LAMP.py" et le script va s'exéctuer dans son ensemble.
 
 Le script va:
 
@@ -36,9 +36,9 @@ Le script va:
 
 - Télécharger wordpress
 
-- Proceder a l'extraction du l'archive wordpress dans ça derniere version en français (latest-fr-FR.zip)
+- Procéder a l'extraction de l'archive wordpress dans ça dernière version en français (latest-fr-FR.zip)
 
-- Déplacer les fichier de wordpress dans le repertoire web de Apache (/war/www/html)
+- Déplacer les fichiers de wordpress dans le répertoire web d'Apache (/war/www/html)
 
 - Redémarrer le service Apache
 
