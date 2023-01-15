@@ -50,7 +50,9 @@ Le script va:
 
 ## Versions
 Dernière version du projet : 1.0
+
 Dernière version LAMP.py : 1.0
+
 Dernière version Mysql.sh : 1.0
 
 
