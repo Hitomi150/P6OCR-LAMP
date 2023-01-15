@@ -27,13 +27,21 @@ Executer la commande "python LAMP.py" et le script va s'éxectuer dans son ensem
 Le script va:
 
 -Mettre à jour l'os (testé sous debian 10)
+
 -Installer Apache
+
 -Installer MySQL
+
 -Installer PHP
+
 -Télécharger wordpress
+
 -Proceder a l'extraction du l'archive wordpress dans ça derniere version en français (latest-fr-FR.zip)
+
 -Déplacer les fichier de wordpress dans le repertoire web de Apache (/war/www/html)
+
 -Redémarrer le service Apache
+
 -Faire appel au script Mysql.sh pour créer une database et un utilisateur
 
 
