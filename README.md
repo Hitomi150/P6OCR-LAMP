@@ -9,10 +9,8 @@ Ce projet consiste à automatiser l'installation d'un serveur LAMP+wordpress et 
 
 ### Pré-requis
 
-Ce qu'il est requis pour commencer avec votre projet...
-
-- Installé python
-- Donnée les droits d'exécution au fichier Mysql.sh avec la commande "chmod -R 777 /etc/cron.d/Mysql.sh"
+- Installer python
+- Donner les droits d'exécution au fichier Mysql.sh avec la commande "chmod -R 777 /etc/cron.d/Mysql.sh"
 
 ### Installation
 
@@ -51,7 +49,9 @@ Le script va:
 
 
 ## Versions
-Dernière version : 1.0
+Dernière version du projet : 1.0
+Dernière version LAMP.py : 1.0
+Dernière version Mysql.sh : 1.0
 
 
 ## Auteurs
