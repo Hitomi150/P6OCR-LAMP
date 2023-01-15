@@ -1,47 +1,46 @@
 # P6OCR-LAMP
-_(juste en dessous des badges sympatiques à placer)_
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)  [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
 
-Une petite description du projet
 
 ## But de projet
 
-Ce projet consiste a automatiser l'installation d'un serveur LAMP+wordpress et la création d'une base de donnée.
+Ce projet consiste à automatiser l'installation d'un serveur LAMP+wordpress et la création d'une base de donnée.
 
 ### Pré-requis
 
 Ce qu'il est requis pour commencer avec votre projet...
 
-- chmod -R 777 /etc/cron.d/Mysql.sh
-- etc...
+- Installé python
+- Donnée les droits d'execution au fichier Mysql.sh avec la commande "chmod -R 777 /etc/cron.d/Mysql.sh"
 
 ### Installation
 
-Les étapes pour installer votre programme....
+Pour installer le script il faut:
 
-Dites ce qu'il faut faire...
+-Télécharger les fichier LAMP.py et Mysql.sh
 
-_exemple_: Executez la commande ``telnet mapscii.me`` pour commencer ensuite [...]
+### Executer le script
 
+Executer la commande "python LAMP.py" et le script va s'éxectuer dans son ensemble.
 
-Ensuite vous pouvez montrer ce que vous obtenez au final...
+Le script va:
 
-## Démarrage
+-Mettre à jour l'os (testé sous debian 10)
+-Installer Apache
+-Installer MySQL
+-Installer PHP
+-Télécharger wordpress
+-Proceder a l'extraction du l'archive wordpress dans ça derniere version en français (latest-fr-FR.zip)
+-Déplacer les fichier de wordpress dans le repertoire web de Apache (/war/www/html)
+-Redémarrer le service Apache
+-Faire appel au script Mysql.sh pour créer une database et un utilisateur
 
-Dites comment faire pour lancer votre projet
 
 ## Fabriqué avec
 
-Entrez les programmes/logiciels/ressources que vous avez utilisé pour développer votre projet
+[SublimeText](https://www.sublimetext.com/) - Editeur de textes
 
-_exemples :_
-* [Materialize.css](http://materializecss.com) - Framework CSS (front-end)
-* [Atom](https://atom.io/) - Editeur de textes
-
-## Contributing
-
-Si vous souhaitez contribuer, lisez le fichier [CONTRIBUTING.md](https://example.org) pour savoir comment le faire.
 
 ## Versions
 Listez les versions ici 
@@ -52,19 +51,11 @@ Liste des versions : [Cliquer pour afficher](https://github.com/your/project-nam
 _(pour le lien mettez simplement l'URL de votre projets suivi de ``/tags``)_
 
 ## Auteurs
-Listez le(s) auteur(s) du projet ici !
-* **Jhon doe** _alias_ [@outout14](https://github.com/outout14)
 
-Lisez la liste des [contributeurs](https://github.com/your/project/contributors) pour voir qui à aidé au projet !
+DAMOND Greg _alias_ [@Hitomi150](https://github.com/Hitomi150)
 
-_(pour le lien mettez simplement l'URL de votre projet suivi de ``/contirubors``)_
 
 ## License
 
 Ce projet est sous licence ``exemple: WTFTPL`` - voir le fichier [LICENSE.md](LICENSE.md) pour plus d'informations
 
-
-
-# P6OCR-LAMP
-
-Ce script permet d'installer et de configurer WordPress sur un serveur en utilisant Apache, MySQL et PHP. Le script commence par mettre à jour les paquets, puis installe Apache, MySQL, PHP et télécharge WordPress. Il extrait ensuite les fichiers de WordPress et les déplace dans le répertoire web d'Apache, puis configure WordPress en exécutant le fichier setup-config.php. Enfin, le script redémarre Apache pour que les modifications prennent effet.
