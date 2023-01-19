@@ -9,30 +9,30 @@ Ce projet consiste à automatiser l'installation d'un serveur LAMP+wordpress et 
 
 ### Pré-requis
 
-- Installer python
+- Installer python3
 - Donner les droits d'exécution au fichier Mysql.sh avec la commande "chmod -R 777 /etc/cron.d/Mysql.sh"
 
 ### Installation
 
 Pour installer le script il faut:
 
-- Télécharger les fichiers LAMP.py et Mysql.sh
+- Télécharger les 2 Scripts LAMP.py et Mysql.sh
 
 ### Exécuter le script
 
 Exécuter la commande "python LAMP.py" et le script va s'exéctuer dans son ensemble.
 
-Le script va:
+Le script LAMP.py va:
 
 - Mettre à jour l'os (testé sous debian 10)
 
-- Installer Apache
+- Installer la derniere version d'Apache (2.4.38)
 
-- Installer MySQL
+- Installer la derniere version de mariadb-server (10.3.34)
 
-- Installer PHP
+- Installer la derniere version de PHP (7.3)
 
-- Télécharger wordpress
+- Télécharger la derniere version de wordpress (latest-fr-FR.zip)
 
 - Procéder a l'extraction de l'archive wordpress dans ça dernière version en français (latest-fr-FR.zip)
 
@@ -42,6 +42,7 @@ Le script va:
 
 - Faire appel au script Mysql.sh pour créer une database et un utilisateur
 
+Le script Mysql.sh est interactif. Ce qui implique le renseignement du nom de la database, de l'utilisateur de la database ainsi que le mot de passe.
 
 ## Fabriqué avec
 
